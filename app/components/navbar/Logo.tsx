@@ -7,7 +7,10 @@ const Logo = () => {
   const router = useRouter();
 
   return (
-    <div className="hidden md:flex cursor-pointer items-center gap-2">
+    <div
+      onClick={() => router.push('/')}
+      className="hidden md:flex cursor-pointer items-center gap-2"
+    >
       <Image
         alt="Logo"
         height="50"
