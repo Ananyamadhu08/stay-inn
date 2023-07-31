@@ -56,7 +56,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
   }, [reservations]);
 
   const category = useMemo(() => {
-    return categories.find((items) => items.label === listing.category);
+    return categories.find((item) => item.label === listing.category);
   }, [listing.category]);
 
   const onCreateReservation = useCallback(() => {
